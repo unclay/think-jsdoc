@@ -1,0 +1,27 @@
+{
+  "name": "think-jsdoc",
+  "version": "0.1.0",
+  "description": "把js文件的注释提取到md文件中",
+  "keywords": [
+    "thinkjs",
+    "think",
+    "think-jsdoc",
+    "jsdoc",
+    "docute"
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unclay/think-jsdoc.git"
+  },
+  "author": "unclay <wcl58981298@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/unclay/think-jsdoc/issues"
+  },
+  "homepage": "https://github.com/unclay/think-jsdoc#readme",
+  "dependencies": {
+    "iconv-lite": "^0.4.23",
+    "think-helper": "^1.1.1"
+  }
+}
