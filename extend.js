@@ -18,7 +18,7 @@ module.exports = (Application, appOptions = {}) => {
       super(options);
       assert(options.ROOT_PATH, 'options.ROOT_PATH must be set');
       if (!options.DOC_PATH) {
-        let docPath = path.join(options.ROOT_PATH, appOptions.OUT_PAth || 'docs/markdown');
+        let docPath = path.join(options.ROOT_PATH, appOptions.OUT_PAth || 'docs');
         if (!options.docTranspiler && !helper.isDirectory(docPath)) {
           docPath = path.join(options.ROOT_PATH, 'src');
         }
@@ -30,7 +30,7 @@ module.exports = (Application, appOptions = {}) => {
       if (!this.options.oneWatcher) {
         console.log('More than one watcher');
         super.startWatcher();
-        this._newWater();
+        this._newWatcher();
       } else {
         const Watcher = this.options.watcher;
         if (!Watcher) return;
@@ -44,7 +44,7 @@ module.exports = (Application, appOptions = {}) => {
         instance.watch();
       }
     }
-    _newWater() {
+    _newWatcher() {
       const Watcher = this.options.watcher;
       if (!Watcher) return;
       const instance = new Watcher({
