@@ -31,11 +31,11 @@ module.exports = class Parser {
     if (block) {
       const arr = [];
       for (let item of block) {
+        item = item.replace(language.docBlockItemRegExp, '');
         item = item.replace(/\uffff/g, '\n');
         item = item.replace(language.inlineRegExp, '');
         arr.push(item);
       }
-      
       
       const res = helper.mkdir(path.dirname(outputFilename));
       assert(res, 'You don\'t have right to create file in the doc path!');
