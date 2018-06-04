@@ -1,13 +1,16 @@
 {
   "name": "think-jsdoc",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "把js文件的注释提取到md文件中",
   "keywords": [
     "thinkjs",
     "think",
     "think-jsdoc",
     "jsdoc",
-    "docute"
+    "docute",
+    "markdown",
+    "apidoc",
+    "doc"
   ],
   "main": "index.js",
   "repository": {
